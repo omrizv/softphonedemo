@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="external/bootstrap/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/options.css" />
+</head>
+<body>
+
+<div class="settings">
+    <div class="settings-item-wrapper">
+        <div class="setting">
+            <label id="urlLabel" class="setting-label" >Genesys Cloud URL:</label>
+            <input type="text" id="url" class="setting-input-text" />
+        </div>
+        <div class="setting">
+            <label class="setting-label setting-label-checkbox">
+                <input type="checkbox" id="enableSsoSettings" class="setting-input-checkbox" />
+                <span id="enableSsoProviderLabel">Auto Redirect to SSO</span>
+                <div id="ssoError" class="settings-error-message "></div>
+                <div id="ssoTextBoxes" class="settings-text-input">
+                    <div>
+                        <label class="setting-label">SSO Identity Provider Name</label>
+                        <input type="text" id="ssoProvider"/>
+                    </div>
+                    <div>
+                        <label class="setting-label">Genesys Cloud Organization Name</label>
+                        <input type="text" id="ssoOrganization"/>
+                    </div>
+                </div>
+            </label>
+        </div>
+        <div class="setting">
+            <label class="setting-label setting-label-checkbox">
+                <input type="checkbox" id="dedicatedLoginWindowCheckbox" class="setting-input-checkbox" />
+                <span id="dedicatedLoginWindowLabel">Enable Dedicated Login Window</span>
+            </label>
+        </div>
+        <div class="setting">
+            <label class="setting-label setting-label-checkbox">
+                <input type="checkbox" id="clickToDial" class="setting-input-checkbox" />
+                <span id="clickToDialLabel">Genesys Cloud Click-to-Dial</span>
+            </label>
+        </div>
+        <div class="setting">
+            <label class="setting-label setting-label-checkbox">
+                <input type="checkbox" id="enableDynamicChangeMonitoring" class="setting-input-checkbox" />
+                <span id="enableDynamicChangeMonitoringLabel">Enable Click-to-Dial in Dynamic Content</span>
+            </label>
+        </div>
+        <div class="setting">
+            <label class="setting-label setting-label-checkbox">
+                <input type="checkbox" id="enableServerSideLogging" class="setting-input-checkbox" />
+                <span id="enableServerSideLoggingLabel">Enable Server-Side Logging</span>
+            </label>
+        </div>
+        <div class="setting">
+            <label class="setting-label setting-label-checkbox">
+                <input type="checkbox" id="enableConfigurableCallerID" class="setting-input-checkbox" />
+                <span id="enableConfigurableCallerIDLabel">Enable Configurable Caller ID</span>
+            </label>
+        </div>
+        <div class="setting">
+            <label class="setting-label setting-label-checkbox">
+                <input type="checkbox" id="enableCallHistory" class="setting-input-checkbox" />
+                <span id="enableCallHistoryLabel">Enable Call History</span>
+            </label>
+        </div>
+        <div class="setting">
+            <label class="setting-label setting-label-checkbox">
+                <input type="checkbox" id="searchExternalContacts" class="setting-input-checkbox" />
+                <span id="searchExternalContactsLabel">Search Genesys Cloud External Contacts</span>
+            </label>
+        </div>
+        <div class="setting">
+            <label class="setting-label" id="defaultOutboundSMSCountryCodeLabel">Default Outbound SMS Country Code</label>
+            <select id="defaultOutboundSMSCountryCode" class="setting-input-select">
+                <option value="" id="selectCountryCodeOption">Select a country code</option>
+            </select>
+        </div>
+    </div>
+    <div class="settings-buttons">
+        <button id="save" class="btn btn-primary setting-button-save" disabled>Save</button>
+        <button id="cancel" class="btn btn-link setting-link-cancel">Cancel</button>
+    </div>
+</div>
+<script src="external/intl-tel-input/intlTelInput.min.js"></script>
+<script src="app/js/settingsHelper.js"></script>
+<script src="app/js/options.js"></script>
+</body>
+</html>

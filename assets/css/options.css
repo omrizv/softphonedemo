@@ -1,0 +1,133 @@
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    background-color: #f6f6f6;
+}
+/* ========== settings ========== */
+
+.settings {
+    --button-footer-height: 50px;
+    --padding: 20px;
+}
+.settings .setting {
+    margin-bottom: 15px;
+}
+.settings .setting .setting-label {
+    font-weight: 400;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 5px;
+    color: #4c4c4c;
+}
+
+.settings .settings-item-wrapper {
+    margin-bottom: var(--button-footer-height);
+    padding: var(--padding);
+}
+
+.settings .settings-buttons {
+    position: fixed;
+    bottom: 0px;
+    height: var(--button-footer-height);
+    padding: 7px var(--padding);
+    background-color: #f6f6f6;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.533);
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+/* ========== settings input text ========== */
+
+.settings .setting .setting-input-text,
+.settings .setting .setting-input-select {
+    border-radius: 4px;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.settings .setting .setting-input-text:not([disabled]),
+.settings .setting .setting-input-select:not([disabled]) {
+    background-color: #fff;
+    color: #555;
+}
+.settings .setting .setting-input-text:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+}
+
+/* ========== settings input checkbox ========== */
+
+.settings .setting .setting-label-checkbox {
+    padding: 5px;
+    display: inline-block;
+    -webkit-user-select: none;
+}
+.settings .setting .setting-input-checkbox {
+    float: left;
+    margin-right: 10px;
+    -webkit-appearance: checkbox !important;
+    box-shadow: none;
+}
+input[type="checkbox"]:checked::before {
+    -webkit-user-select: none;
+    background-image: -webkit-image-set(url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAQAAAADpb+tAAAAaElE…Ugxm7MEU25sURfZg4590Zw5iFZ8mXS0ZwN+eaPjyh/8O/H7bzPJ5NOo0AAAAASUVORK5CYII=") 2x);
+    background-size: 100% 100%;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+/* ========== settings buttons ========== */
+
+.settings .settings-buttons .setting-button-save,
+.settings .settings-buttons .setting-button-save:hover {
+    border-color: #4b9eb9;
+    text-shadow: none;
+    color: #fff;
+    box-shadow: none;
+    background-image: linear-gradient(to bottom,#61b8d4 0,#4a9cb6 100%);
+}
+.settings .settings-buttons .setting-button-save:active {
+    background-color: #39a6c9;
+    border-color: #35a0c3;
+    outline: 0;
+    background-image: none;
+}
+.settings .settings-buttons .setting-link-cancel,
+.settings .settings-buttons .setting-link-cancel:hover {
+    color: #1997CA;
+    font-weight: 400;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    outline: 0;
+}
+.settings .settings-buttons .setting-link-cancel:hover {
+    color: #116486;
+    text-decoration: underline;
+}
+
+/* ========== settings text input ========== */
+.settings-text-input {
+	margin-left: 24px;
+}
+
+.settings-text-input  > div {
+	margin-top:7px;
+}
+
+/* ========== settings error ========== */
+.settings-error-message {
+	font-size: 12px;
+    color: red;
+	margin-left: 24px;
+	max-width: 19em;
+}

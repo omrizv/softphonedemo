@@ -1,0 +1,57 @@
+{
+  "type": "object",
+  "properties": {
+    "url": {
+      "title": "Genesys Cloud URL",
+      "type": "string"
+    },
+    "clickToDial": {
+      "title": "Genesys Cloud Click-to-Dial",
+      "type": "boolean"
+    },
+    "enableDynamicChangeMonitoring": {
+      "title" : "Enable Click-to-Dial in Dynamic Content",
+      "type": "boolean"
+    },
+    "enableServerSideLogging": {
+      "title": "Enable Server-Side Logging",
+      "type": "boolean"
+    },
+    "enableAgentConfiguration": {
+      "title": "The setting to allow managed users to overwrite managed settings locally on their machine.",
+      "type": "boolean"
+    },
+    "enableConfigurableCallerID": {
+      "title": "The setting to allow agents to configure a Caller ID name and number.",
+      "type": "boolean"
+    },
+    "searchExternalContacts": {
+      "title": "The setting to search for Genesys Cloud external contacts when making calls or transferring interactions.",
+      "type": "boolean"
+    },
+    "defaultOutboundSMSCountryCode": {
+      "title": "A two-letter country code (ISO 3166-1 alpha-2) for a default outbound SMS country code.",
+      "type": "string"
+    },
+    "useSSO": {
+        "title": "The setting to allow users to auto-redirect with SSO",
+        "type": "boolean"
+    },
+    "providerName": {
+        "title": "SSO Provider name",
+        "type": "string"
+    },
+    "orgName": {
+        "title": "Genesys Cloud Organization name",
+        "type": "string"
+    },
+    "dedicatedLoginWindow": {
+      "title": "Enable Dedicated Login Window",
+      "type": "boolean"
+    },
+    "enableCallHistory": {
+      "title": "Enable Call History",
+      "type": "boolean"
+    }
+  }
+}

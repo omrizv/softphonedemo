@@ -1,0 +1,60 @@
+html,
+body {
+    height:100%;
+    width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+iframe {
+    height:100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.chrome-webview{
+    height: 100%;
+    min-height: 450px;
+    min-width: 200px;
+    width: 100%;
+}
+
+#customBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#expandedContent {
+    position: fixed;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    height: 0;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: height 0.3s ease-out;
+    text-align: left;
+    z-index: 1000;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#expandedContent.expanded {
+    height: 300px;
+    border-top: 1px solid #ccc;
+    overflow-y: auto;
+}

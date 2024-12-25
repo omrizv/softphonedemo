@@ -1,0 +1,55 @@
+{
+   "appDesc": {
+      "description": "The description of the application, displayed in the web store.",
+      "message": ""
+   },
+   "appName": {
+      "description": "The title of the application, displayed in the web store.",
+      "message": "Cloudbriz Softphone"
+   },
+   "appTitle": {
+      "message": "Cloudbriz Softphone"
+   },
+   "contextMenuMakeCall": {
+      "message": "Make a Call"
+   },
+   "optionsCancel": {
+      "message": "Cancel"
+   },
+   "optionsClickToDial": {
+      "message": "Enable Click-to-Dial"
+   },
+   "optionsDedicatedLoginWindow": {
+      "message": "Enable Dedicated Login Window"
+   },
+   "optionsDefaultOutboundSMSCountryCode": {
+      "message": "Default Outbound SMS Country Code"
+   },
+   "optionsEnableCallHistory": {
+      "message": "Enable Call History"
+   },
+   "optionsEnableConfigurableCallerID": {
+      "message": "Enable Configurable Caller ID"
+   },
+   "optionsEnableDynamicChangeMonitoring": {
+      "message": "Enable Click-to-Dial in Dynamic Content"
+   },
+   "optionsEnableServerSideLogging": {
+      "message": "Enable Server-Side Logging"
+   },
+   "optionsSave": {
+      "message": "Save"
+   },
+   "optionsSaving": {
+      "message": "Saving..."
+   },
+   "optionsSearchExternalContacts": {
+      "message": "Search Genesys Cloud External Contacts"
+   },
+   "optionsSelectCountryCode": {
+      "message": "Select a country code"
+   },
+   "optionsUrl": {
+      "message": "Cloudbriz Softphone URL"
+   }
+}
